@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>weather app</title>
+  </head>
+  <body>
+    <div class="container mb-3">
+      <div class="row">
+        <div class="col-md-6 mx-auto text-center bg-primary mt-3 p-5" id="alert">
+          <h1 id="location" class="display-4 text-light"></h1>
+          <h3 class="text-light" id="desc"></h3>
+          <h3 class="string text-light"></h3>
+          <img id="icon">
+          <ul class="list-group my-3 list-group-flush" id="details">
+            <li class="list-group-item bg-primary text-light" id="humidity"></li>
+            <li class="list-group-item bg-primary text-light" id="max-temp"></li>
+            <li class="list-group-item bg-primary text-light" id="min-temp"></li>
+            <li class="list-group-item bg-primary text-light" id="feels-like"></li>
+            <li class="list-group-item bg-primary text-light" id="wind"></li>
+          </ul>
+          <form class="form-group location-change">
+            <input type="text" class="form-control mb-3" name = 'location' id="input">
+            <button type="submit" class="btn btn-success" >Change Location</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="script/storage.js"></script>
+    <script src="script/weather.js"></script>
+    <script src="script/ui.js"></script>
+    <script src="script/app.js"></script>
+  </body>
+</html>
