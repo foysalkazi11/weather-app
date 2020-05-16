@@ -3,16 +3,16 @@ const ui = new Ui;
 
 const form = document.querySelector('form');
 const input = document.querySelector('#input');
-document.addEventListener('DOMContentloded',getWeather());
 
-  function getWeather() {
+
+  
     weather.getWeather('dhaka')
   .then(data =>{
     ui.paint(data)
   })
   .catch(err =>console.log(err)
   );
-  }
+  
 
   form.addEventListener('submit',e =>{
     e.preventDefault();
